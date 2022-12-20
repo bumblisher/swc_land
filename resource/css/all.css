@@ -954,3 +954,52 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .test .help_menu li + li{margin-left:30px}
 .test .help_menu li a{display:block;width:100%;line-height:60px;font-size:18px;font-family:'Noto-M', sans-serif;background:#ffffff;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);text-align:center;border-radius:7px}
 .test .help_menu li a:hover{background:#445fb7;color:#ffffff}
+
+
+:root {
+    --primary: #134aa9;
+    --primary-50: rgba(19,74,169,.5);
+    --primary-hover: #0c3c8f;
+    --action: #ff2434;
+    --action-50: rgba(255,36,52,.5);
+}
+
+.saleList{padding:80px 0 60px}
+.saleList .inner{max-width:1360px;margin:0 auto}
+
+/* 급매물 */
+.saleList.urgent{padding-top:40px}
+
+/* 최신매물 */
+#sale_new{background-color:#f5f6f8}
+
+/* 타이틀 */
+.saleList .tit{text-align:center}
+.saleList .tit p{font-size:38px;line-height:1.2;color:#222;font-family:'GmarketSansBold'}
+
+/* 매물목록 */
+.saleList ul{margin-bottom:55px;display: flex;}
+.saleList ul:after{display:block;content:"";visibility:hidden;clear:both}
+.saleList ul li{overflow:hidden;float:left;position:relative;width:calc(100% / 4 - 22.5px);height:410px;margin-top:40px;border-radius:26px;border:solid 1px #e1e1e1;transition:all .3s;background-color:#fff}
+.saleList ul li+li{margin-left:30px}
+.saleList ul li:nth-child(4n+1){margin-left:0}
+.saleList ul li a{display:block;height:100%;padding:25px;font-size:14px;color:#999}
+.saleList ul li .cate{padding-top:237px;color:#134aa9}
+.saleList ul li .status{position:absolute;left:20px;top:20px;z-index:1;height:28px;padding:0 12px;border-radius:20px;font-size:14px;color:#fff;line-height:32px;background-color:var(--primary)}
+.saleList ul li .subj{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding-top:8px;font-size:15px;line-height:1.5;color:#222}
+.saleList ul li .wh{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.saleList ul li .price{margin-top:3px;font-size:20px;color:#222;font-family:'GmarketSansBold'}
+.saleList ul li .price span{display:inline-block;vertical-align:middle;width:32px;height:32px;margin-right:10px;border-radius:50%;border:1px solid var(--primary);font-size:16px;color:var(--primary);line-height:34px;text-align:center;font-family:'GmarketSansMedium'}
+.saleList ul li .img{overflow:hidden;position:absolute;left:0;top:0;width:100%;height:238px;background-size:cover;background-repeat:no-repeat;background-position:center;background-image:url(/sh_img/make24/main_map/no_img.jpg)}
+.saleList ul li .img img{transition:all .2s}
+.saleList ul li .img .state_wrap{display:flex;position:absolute;top:15px;left:15px;width:max-content}
+.saleList ul li .img .state{min-width:70px;height:30px;border-radius:30px;font-size:14px;color:#fff;text-align:center;line-height:34px;background:var(--primary);font-family:'SBAggroL'}
+.saleList ul li .img .state+.state{margin-left:4px}
+.saleList ul li .sold{position:absolute;left:0;top:0;z-index:2;width:100%;height:100%;background:url(/sh_img/make24/search/img/sold.png) center no-repeat rgba(255,255,255,.6);background-size:55%}
+
+/* 더보기  */
+.saleList .more_btn{display:block;width:200px;height:60px;margin:0 auto;padding-left:7px;border:none;border-radius:30px;font-size:16px;color:#222;line-height:62px;text-align:center;background:#f5f6f8;transition:all .2s;font-family:'SBAggroL'}
+.saleList .more_btn svg{vertical-align:middle;width:20px;margin-left:10px}
+#sale_new .more_btn{background:#fff}
+
+
