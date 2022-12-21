@@ -748,7 +748,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .popup .pop_header {position: relative; padding:0 30px;height: 70px; background: #445fb7;}
 .popup .pop_header h2 {line-height: 70px; color: #fff; font-size: 20px;text-align: left; }
 .popup .pop_header .btn_close {position: absolute; top: 25px; right: 30px; width: 20px; height: 20px; background: url(../image/ico_close.png) no-repeat center;text-indent: -9999px;}
-.popup .pop_cont {height: 480px;overflow: auto;padding: 30px;box-sizing: border-box; }
+.popup .pop_cont {height: 680px;overflow: auto;padding: 30px;box-sizing: border-box; }
 .popup .tit_tiny{font-size:18px;font-family:'Roboto', 'Noto-M', sans-serif;}
 .popup .pop_footer{height: 50px;background: #f7f7f7;padding:0 30px;box-sizing: border-box;border-top:1px solid #ccc}
 .popup .pop_footer .btn_dayclose{color:#555;font-size: 15px;text-decoration: underline;line-height: 50px;float: right;}
