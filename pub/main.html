@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>신현재 부동산</title>
@@ -7,484 +8,486 @@
     <link rel="stylesheet" href="../resource/css/reset.css" />
     <link rel="stylesheet" href="../resource/css/all.css" />
     <link rel="stylesheet" href="../resource/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="../resource/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../resource/js/common.js"></script>
+
 </head>
+
 <body>
-<div class="wrap">
-    <div class="skip">
-        <a href="#container">본문바로가기</a>
-    </div>
-    <header class="header">
-        <div class="header_inner">
-            <div class="header_top">
-                <div class="util_box">
-                    <ul>
-                        <li class="mypage">
-                            <a href="#">마이페이지</a>
-                            <ul class="mypage_list"> 
-                                <li><a href="#">내 글 목록</a></li>
-                                <li><a href="#">회원정보 수정</a></li>
-                                <li><a href="#">비밀번호 변경</a></li>
-                            </ul>
-                        </li>
-                        <li class="join"><a href="join.html">회원가입</a></li>
-                        <li class="login"><a href="#">로그인</a></li>
-                        <li class="logout"><a href="#">로그아웃</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header_gnb">
-                <h1 class="logo"><a href="main.html">신현재 부동산</a></h1>
-                <nav class="gnb_box">
-                    <ul class="dep1">
-                        <li><a href="#">매물검색</a></li>
-                        <li><a href="#">부동산 뉴스</a></li>
-                        <li><a href="#">커뮤니티</a></li>
-                        <li><a href="#">관심목록</a></li>
-                        <li><a href="#">회사소개</a></li>
-                    </ul>
-                    <!-- <a class="site_map" href="#">사이트맵</a> -->
-                    <div class="dep2_box">
-                        <div class="dep2_inner">
-                            <ul>
-                                <li>
-                                    <ul class="dep2">
-                                        <li><a href="#">아파트</a></li>
-                                        <li><a href="#">주택</a></li>
-                                        <li><a href="#">원룸</a></li>
-                                        <li><a href="#">오피스텔</a></li>
-                                        <li><a href="#">상가</a></li>
-                                        <li><a href="#">사무실</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="dep2">
-                                        <li><a href="#">분양정보</a></li>
-                                        <li><a href="#">분양일정</a></li>
-                                        <li><a href="#">브랜드관</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="dep2">
-                                        <li><a href="#">공지사항</a></li>
-                                        <li><a href="#">질문과 답변</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="dep2">
-                                        <li><a href="#">최근 본 방</a></li>
-                                        <li><a href="#">찜한 방</a></li>
-                                        <li><a href="#">즐겨찾기</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="dep2">
-                                        <li><a href="#">인사말</a></li>
-                                        <li><a href="#">회사 소개</a></li>
-                                        <li><a href="#">찾아오시는 길</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+    <div class="wrap">
+        <div class="skip">
+            <a href="#container">본문바로가기</a>
         </div>
-    </header>
-    <div id="container" class="container main">
-        <div class="content">
-            <div class="content_inner">
-                <div class="tit_main">
-                    <p class="slogan">투명한 정보만 취급하는 부동산<br><span class="fwb">신현재 부동산</span></p>
-                    <p class="slogan_en">SWC  SWC  SWC  SWC  SWC  SWC  </p>
-                </div>
-                <div class="box_main">
-                    <ul class="quick_menu">
-                        <li><a href="#">아파트</a></li>
-                        <li><a href="#">주택</a></li>
-                        <li><a href="#">원룸</a></li>
-                        <li><a href="#">오피스텔</a></li>
-                    </ul>
-                    <ul class="quick_menu2">
-                        <li><a href="#">최신 분양정보 바로가기</a></li>
-                        <li><a href="#">HOT한 매물정보 보러가기</a></li>
-                        <li><a href="#">My 즐겨찾기 바로가기</a></li>
-                    </ul>
-                </div>
-                <div class="box_noti">
-                    <div class="tab_main">
+        <header class="header">
+            <div class="header_inner">
+                <div class="header_top">
+                    <div class="util_box">
                         <ul>
-                            <li class="on"><a href="#">공지사항</a></li>
-                            <li><a href="#">부동산뉴스</a></li>
+                            <li class="mypage">
+                                <a href="#">마이페이지</a>
+                                <ul class="mypage_list">
+                                    <li><a href="#">내 글 목록</a></li>
+                                    <li><a href="#">회원정보 수정</a></li>
+                                    <li><a href="#">비밀번호 변경</a></li>
+                                </ul>
+                            </li>
+                            <li class="join"><a href="join.html">회원가입</a></li>
+                            <li class="login"><a href="#">로그인</a></li>
+                            <li class="logout"><a href="#">로그아웃</a></li>
                         </ul>
-                        <a href="#" class="more">더보기</a>
-                    </div>
-                    <div class="tab_main_cnt">
-                        <div class="tab_cnt01">
-                            <ul class="noti">
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">신현재 부동산 오픈</span>
-                                        <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산 오픈sdasdasdas</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">오픈이벤트 참여하세요</span>
-                                        <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산 오픈sdasdasdas</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">SWC 신입사원 모집</span>
-                                        <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산 오픈sdasdasdas</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="tab_cnt02">
-                            <ul class="noti">
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">TitleTitle</span>
-                                        <span class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">TitleTitle</span>
-                                        <span class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="tit">TitleTitle</span>
-                                        <span class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
-                                        <span class="cal">2020-12-30</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-                <section id="sh_section">
-                    <article class="saleList" id="sale_rcmd">
-                        <div class="inner">
-                            <div class="tit">
-                                <p>추천매물</p>
+                <div class="header_gnb">
+                    <h1 class="logo"><a href="main.html">신현재 부동산</a></h1>
+                    <nav class="gnb_box">
+                        <ul class="dep1">
+                            <li><a href="#">매물검색</a></li>
+                            <li><a href="#">부동산 뉴스</a></li>
+                            <li><a href="#">커뮤니티</a></li>
+                            <li><a href="#">관심목록</a></li>
+                            <li><a href="#">회사소개</a></li>
+                        </ul>
+                        <!-- <a class="site_map" href="#">사이트맵</a> -->
+                        <div class="dep2_box">
+                            <div class="dep2_inner">
+                                <ul>
+                                    <li>
+                                        <ul class="dep2">
+                                            <li><a href="#">아파트</a></li>
+                                            <li><a href="#">주택</a></li>
+                                            <li><a href="#">원룸</a></li>
+                                            <li><a href="#">오피스텔</a></li>
+                                            <li><a href="#">상가</a></li>
+                                            <li><a href="#">사무실</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="dep2">
+                                            <li><a href="#">분양정보</a></li>
+                                            <li><a href="#">분양일정</a></li>
+                                            <li><a href="#">브랜드관</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="dep2">
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">질문과 답변</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="dep2">
+                                            <li><a href="#">최근 본 방</a></li>
+                                            <li><a href="#">찜한 방</a></li>
+                                            <li><a href="#">즐겨찾기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul class="dep2">
+                                            <li><a href="#">인사말</a></li>
+                                            <li><a href="#">회사 소개</a></li>
+                                            <li><a href="#">찾아오시는 길</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="item_list">
-                                <li>
-                                    <a href="#">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_K5UpaDbx_53b8b7aea54ab090d98d4bdf5bf2833b86e41241_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span> <span class="state">급매물</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>9억8,000
-                                            </p>
-                                            <p class="subj">송내 로데오 상가</p>
-                                            <p class="wh">경기 부천시 송내동 303-5</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(100)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_jxl9YJcB_edb0911db820ec8660966238e82ceb07d7804e7b_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span>
-                                            </div>
-                                            <div class="sold"></div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">사무실</p>
-                                            <p class="price">
-                                                <span>월</span>5,000/60
-                                            </p>
-                                            <p class="subj">샤이닝 빌딩</p>
-                                            <p class="wh">경기 부천시 상동 548-4</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(98)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_bmEyjqse_4cd2818e4463dea16d362d1beb9f6a874655c927_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>50억
-                                            </p>
-                                            <p class="subj">샤이닝 상가</p>
-                                            <p class="wh">경기 부천시 심곡동 35</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(97)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_e5rWP02M_8881bda38c2f65668cbd963fbbbdf7917c01c01b_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">아파트</p>
-                                            <p class="price">
-                                                <span>매</span>3억1,000
-                                            </p>
-                                            <p class="subj">DH씨밀레</p>
-                                            <p class="wh">경기 부천시 송내동 564-3</p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <button class="more_btn" onClick="more('rcmd',4,5)">추천매물 더보기 <i
-                                    data-feather="chevron-down"></i></button>
-
                         </div>
-                    </article>
-                    <article class="saleList" id="sale_urgent" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="200">
-                        <div class="inner">
-                            <div class="tit">
-                                <p>급매물</p>
-                            </div>
-                            <ul class="item_list">
-                                <li>
-                                    <a href="javascript:land_view(99)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_K5UpaDbx_53b8b7aea54ab090d98d4bdf5bf2833b86e41241_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span> <span class="state">급매물</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>9억8,000
-                                            </p>
-                                            <p class="subj">송내 로데오 상가</p>
-                                            <p class="wh">경기 부천시 송내동 303-5</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(94)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_RB91HxcU_94b4a49a064376541b08f687134426a3e78ffebf_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">급매물</span>
-                                            </div>
-                                            <div class="sold"></div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">빌라</p>
-                                            <p class="price">
-                                                <span>전</span>1억5,000
-                                            </p>
-                                            <p class="subj">송내 우리샤이닝</p>
-                                            <p class="wh">경기 부천시 송내동 323-1</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(92)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_BKrSzdCU_4a9368b2498d64f39e41cdf475779907641a6301_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">급매물</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">아파트</p>
-                                            <p class="price">
-                                                <span>전</span>1억3,000
-                                            </p>
-                                            <p class="subj">중동에스티마</p>
-                                            <p class="wh">경기 부천시 중동 1031-1</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(90)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_FV1LXSis_20126d9b8ab53d26834821b04020f8995f6b35df_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">급매물</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">오피스텔</p>
-                                            <p class="price">
-                                                <span>월</span>1,000/50
-                                            </p>
-                                            <p class="subj">매트로팰리스</p>
-                                            <p class="wh">경기 부천시 중동 1145</p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <button class="more_btn" onClick="more('urgent',4,5)">급매물 더보기 <i
-                                    data-feather="chevron-down"></i></button>
-
-                        </div>
-                    </article>
-                    <article class="saleList" id="sale_new" data-aos="fade-up" data-aos-duration="1000"
-                        data-aos-delay="200">
-                        <div class="inner">
-                            <div class="tit">
-                                <p>최신매물</p>
-                            </div>
-                            <ul class="item_list">
-                                <li>
-                                    <a href="javascript:land_view(99)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_K5UpaDbx_53b8b7aea54ab090d98d4bdf5bf2833b86e41241_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span> <span class="state">급매물</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>9억8,000
-                                            </p>
-                                            <p class="subj">송내 로데오 상가</p>
-                                            <p class="wh">경기 부천시 송내동 303-5</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(102)">
-                                        <div class="img">
-                                            <div class="state_wrap">
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>60억
-                                            </p>
-                                            <p class="subj">송내동 건물</p>
-                                            <p class="wh">경기 부천시 송내동 303-5</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(100)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_jxl9YJcB_edb0911db820ec8660966238e82ceb07d7804e7b_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span>
-                                            </div>
-                                            <div class="sold"></div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">사무실</p>
-                                            <p class="price">
-                                                <span>월</span>5,000/60
-                                            </p>
-                                            <p class="subj">샤이닝 빌딩</p>
-                                            <p class="wh">경기 부천시 상동 548-4</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:land_view(98)">
-                                        <div class="img"
-                                            style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_bmEyjqse_4cd2818e4463dea16d362d1beb9f6a874655c927_480x.jpg'>
-                                            <div class="state_wrap">
-                                                <span class="state">추천</span>
-                                            </div>
-                                        </div>
-                                        <div class="info">
-                                            <p class="cate">상가</p>
-                                            <p class="price">
-                                                <span>매</span>50억
-                                            </p>
-                                            <p class="subj">샤이닝 상가</p>
-                                            <p class="wh">경기 부천시 심곡동 35</p>
-                                        </div>
-                                    </a>
-                                </li>
-
-                            </ul>
-                            <button class="more_btn" onClick="more('new',4,16)">최신매물 더보기 <i
-                                    data-feather="chevron-down"></i></button>
-
-                        </div>
-                    </article>
-                </section>
-            </div>
-        </div>
-        <a href="#" class="btn_top">TOP</a>
-    </div>
-    <footer class="footer">
-        <div class="footer_inner">
-            <div class="foot_logo">
-                <img src="../resource/image/logo.png" style="width:80px;"/>                               
-            </div>
-            <div class="foot_info">
-                <address>(04615) 대전광역시 관평동 ㅇㅇ로</address>
-                <div class="foot_num">
-                    <span>T : 1234-4568</span>
-                    <span>F : 02-1234-5548</span>
+                    </nav>
                 </div>
-                <p class="copy">COPYRIGHT© ALL RIGHT RESERVED KOREAN ACCREDITATION BOARD OF SWC</p>
             </div>
-            <div class="foot_util">
-                <ul>
-                    <li><a href="#">서비스약관</a></li>
-                    <li><a href="#">개인정보보호정책</a></li>
-                    <li><a href="#">관련사이트</a></li>
-                </ul>
+        </header>
+        <div id="container" class="container main">
+            <div class="content">
+                <div class="content_inner">
+                    <div class="tit_main">
+                        <p class="slogan">투명한 정보만 취급하는 부동산<br><span class="fwb">신현재 부동산</span></p>
+                        <p class="slogan_en">SWC SWC SWC SWC SWC SWC </p>
+                    </div>
+                    <div class="box_main">
+                        <ul class="quick_menu">
+                            <li><a href="#">아파트</a></li>
+                            <li><a href="#">주택</a></li>
+                            <li><a href="#">원룸</a></li>
+                            <li><a href="#">오피스텔</a></li>
+                        </ul>
+                        <ul class="quick_menu2">
+                            <li><a href="#">최신 분양정보 바로가기</a></li>
+                            <li><a href="#">HOT한 매물정보 보러가기</a></li>
+                            <li><a href="#">My 즐겨찾기 바로가기</a></li>
+                        </ul>
+                    </div>
+                    <div class="box_noti">
+                        <div class="tab_main">
+                            <ul>
+                                <li class="on"><a href="#">공지사항</a></li>
+                                <li><a href="#">부동산뉴스</a></li>
+                            </ul>
+                            <a href="#" class="more">더보기</a>
+                        </div>
+                        <div class="tab_main_cnt">
+                            <div class="tab_cnt01">
+                                <ul class="noti">
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">신현재 부동산 오픈</span>
+                                            <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산
+                                                오픈sdasdasdas</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">오픈이벤트 참여하세요</span>
+                                            <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산
+                                                오픈sdasdasdas</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">SWC 신입사원 모집</span>
+                                            <span class="cnt">dasda신현재 부동산 오픈sdasd asdasd asda신현재 부동산
+                                                오픈sdasdasdas</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab_cnt02">
+                                <ul class="noti">
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">TitleTitle</span>
+                                            <span
+                                                class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">TitleTitle</span>
+                                            <span
+                                                class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="tit">TitleTitle</span>
+                                            <span
+                                                class="cnt">contentcontentcontentcontentcontentcontentcontentcontent</span>
+                                            <span class="cal">2020-12-30</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="sh_section">
+                        <article class="saleList" id="sale_rcmd">
+                            <div class="inner">
+                                <div class="tit">
+                                    <p>추천매물</p>
+                                </div>
+                                <ul class="item_list">
+                                    <li>
+                                        <a href="#" class="exPopBtn">
+                                            <div class="img"
+                                                style='background-image: url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_e5rWP02M_8881bda38c2f65668cbd963fbbbdf7917c01c01b_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">추천</span> <span class="state">급매물</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">상가</p>
+                                                <p class="price">
+                                                    <span>매</span>9억8,000
+                                                </p>
+                                                <p class="subj">송내 로데오 상가</p>
+                                                <p class="wh">경기 부천시 송내동 303-5</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="exPopBtn">
+                                            <div class="img"
+                                                style='background-image: url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_jxl9YJcB_edb0911db820ec8660966238e82ceb07d7804e7b_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">추천</span>
+                                                </div>
+                                                <div class="sold"></div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">사무실</p>
+                                                <p class="price">
+                                                    <span>월</span>5,000/60
+                                                </p>
+                                                <p class="subj">샤이닝 빌딩</p>
+                                                <p class="wh">경기 부천시 상동 548-4</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="exPopBtn">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_bmEyjqse_4cd2818e4463dea16d362d1beb9f6a874655c927_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">추천</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">상가</p>
+                                                <p class="price">
+                                                    <span>매</span>50억
+                                                </p>
+                                                <p class="subj">샤이닝 상가</p>
+                                                <p class="wh">경기 부천시 심곡동 35</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="exPopBtn">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_e5rWP02M_8881bda38c2f65668cbd963fbbbdf7917c01c01b_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">추천</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">아파트</p>
+                                                <p class="price">
+                                                    <span>매</span>3억1,000
+                                                </p>
+                                                <p class="subj">DH씨밀레</p>
+                                                <p class="wh">경기 부천시 송내동 564-3</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <button class="more_btn" onClick="more('rcmd',4,5)">추천매물 더보기</button>
+
+                            </div>
+                        </article>
+                        <article class="saleList" id="sale_urgent" data-aos="fade-up" data-aos-duration="1000"
+                            data-aos-delay="200">
+                            <div class="inner">
+                                <div class="tit">
+                                    <p>급매물</p>
+                                </div>
+                                <ul class="item_list">
+                                    <li>
+                                        <a href="javascript:land_view(99)">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_K5UpaDbx_53b8b7aea54ab090d98d4bdf5bf2833b86e41241_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">추천</span> <span class="state">급매물</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">상가</p>
+                                                <p class="price">
+                                                    <span>매</span>9억8,000
+                                                </p>
+                                                <p class="subj">송내 로데오 상가</p>
+                                                <p class="wh">경기 부천시 송내동 303-5</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:land_view(94)">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_RB91HxcU_94b4a49a064376541b08f687134426a3e78ffebf_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">급매물</span>
+                                                </div>
+                                                <div class="sold"></div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">빌라</p>
+                                                <p class="price">
+                                                    <span>전</span>1억5,000
+                                                </p>
+                                                <p class="subj">송내 우리샤이닝</p>
+                                                <p class="wh">경기 부천시 송내동 323-1</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:land_view(92)">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_BKrSzdCU_4a9368b2498d64f39e41cdf475779907641a6301_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">급매물</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">아파트</p>
+                                                <p class="price">
+                                                    <span>전</span>1억3,000
+                                                </p>
+                                                <p class="subj">중동에스티마</p>
+                                                <p class="wh">경기 부천시 중동 1031-1</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:land_view(90)">
+                                            <div class="img"
+                                                style='background-image:url(http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_FV1LXSis_20126d9b8ab53d26834821b04020f8995f6b35df_480x.jpg)'>
+                                                <div class="state_wrap">
+                                                    <span class="state">급매물</span>
+                                                </div>
+                                            </div>
+                                            <div class="info">
+                                                <p class="cate">오피스텔</p>
+                                                <p class="price">
+                                                    <span>월</span>1,000/50
+                                                </p>
+                                                <p class="subj">매트로팰리스</p>
+                                                <p class="wh">경기 부천시 중동 1145</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <button class="more_btn" onClick="more('urgent',4,5)">급매물 더보기</button>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <a href="#" class="btn_top">TOP</a>
+        </div>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="foot_logo">
+                    <img src="../resource/image/logo.png" style="width:80px;" />
+                </div>
+                <div class="foot_info">
+                    <address>(04615) 대전광역시 관평동 ㅇㅇ로</address>
+                    <div class="foot_num">
+                        <span>T : 1234-4568</span>
+                        <span>F : 02-1234-5548</span>
+                    </div>
+                    <p class="copy">COPYRIGHT© ALL RIGHT RESERVED KOREAN ACCREDITATION BOARD OF SWC</p>
+                </div>
+                <div class="foot_util">
+                    <ul>
+                        <li><a href="#">서비스약관</a></li>
+                        <li><a href="#">개인정보보호정책</a></li>
+                        <li><a href="#">관련사이트</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="popup" id="exPop">
+            <div class="pop_header">
+                <h2>추천매물 - 매물01</h2>
+                <button class="btn_close">닫기</button>
+            </div>
+            <div class="pop_cont" id="landView">
+                <div class="inner">
+                    <!-- scr_area [s] -->
+                    <div class="scr_area">
+                        <!-- 이미지/타이틀 [s] -->
+                        <div class="top_info">
+                            <div
+                                class="landImg">
+                                <div class="badge_wrap">
+                                    <span class="badge black">추천</span> <span class="badge black">급매물</span> <span
+                                        class="badge">리모델링</span>
+                                </div>
+                                <div class="swiper">
+                                    <ul class="swiper-wrapper" id="swiper-wrapper" aria-live="off">
+                                        <li class="swiper-slide"><img
+                                                src="http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_K5UpaDbx_53b8b7aea54ab090d98d4bdf5bf2833b86e41241_465x320.jpg"
+                                                alt="송내 로데오 상가 이미지1"></li>
+                                        <li class="swiper-slid"><img
+                                                src="http://land1007.shiningcorp.com/data/file/land/thumb-1935566034_E7ApB4SQ_a1fde99e26ef66e39ff491f2fbb00a2cb69c9085_465x320.jpg"
+                                                alt="송내 로데오 상가 이미지2"></li>
+                                    </ul>
+                                    <div class="swiper-pagination"></div>
+
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                                
+                            </div>
+                            <div class="titles">
+                                <div class="tip">
+                                    <span>매물번호10099</span>
+                                </div>
+                                <div class="tit">
+                                    <p class="price">
+                                        <span>매</span>9억8,000
+                                    </p>
+                                    <p class="desc">송내 로데오 상가</p>
+                                    <p class="loca">경기 부천시 송내동 303-5 2층</p>
+                                </div>
+                                <div class="kwd">
+                                    <span>상가</span>
+                                    <span>공급면적717㎡</span>
+                                </div>
+                                <div class="ps">송내 로데오 상가 입니다.</div>
+                            </div>
+                        </div>
+                        <!-- 이미지/타이틀 [e] -->
+                        <!-- 매물정보 [s] -->
+                        <dl class="dl_info">
+                            <dt class="open" onclick="tit_open(this)">매물정보</dt>
+                            <dd>
+                                <ul class="info_list">
+                                    <li class="add"><span>소재지</span>경기 부천시 송내동 303-5 2층</li>
+                                    <li><span>매물번호</span>10099</li>
+                                    <li><span>매물구분</span>상가</li>
+                                    <li><span>계약상태</span>계약가능</li>
+                                    <li>
+                                        <span>가격정보</span>
+                                        매매 9억8,000
+                                    </li>
+                                    <li><span>해당층/총층</span>7층/지하1층</li>
+                                    <li><span>공급면적</span>717㎡(217평)</li>
+                                    <li><span>전용면적</span>717㎡(217평)</li>
+                                    <li><span>준공년도</span>2006년</li>
+                                    <li><span>입주일자</span>협의 후 가능</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- scr_area [e] -->
+                </div>
+            </div>
+            <div class="pop_footer full">
+                <button class="btn_cm mint">문의하기</button>
+                <button class="btn_cm">고객센터(1588-1588)</button>
             </div>
         </div>
-    </footer>
-    <div class="popup" id="exPop">
-        <div class="pop_header">
-            <h2>알려드립니다</h2>
-            <button class="btn_close">닫기</button>
-        </div>
-        <div class="pop_cont">
-            <div class="txtbox">
-                <p class="tit_tiny">마이페이지 내 보수교육 메뉴 이용제한 안내</h4>
-                <p>제14회 보험심사관리사 자격시험의 합격자 발표를 위한 내부 테스트 작업으로 마이페이지 일부 기능이 제한됩니다. </p>
-                <p>제한 기능: 보수교육 이수현황 확인 및 이수내역 보고<br>제한 기간: 2020. 12. 16.(수) 14:00 까지</p>
-                <p>※기타 문의사항: 1833-6230 내선 3번 </p>
-            </div>
-        </div>
-        <div class="pop_footer">
-            <button class="btn_dayclose">오늘하루 이 창을 열지 않음</button>
-        </div>
+        <div class="dim"></div>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+        });
     </div>
-    <div class="popup sitemap" id="exPop">
-        <div class="pop_header">
-            <h2>전체메뉴</h2>
-            <button class="btn_close">닫기</button>
-        </div>
-        <div class="pop_cont">
-        </div>
-    </div>
-    <div class="dim"></div>
-</div>
 </body>
+
 </html>
