@@ -392,29 +392,25 @@
                     <div class="scr_area">
                         <!-- 이미지/타이틀 [s] -->
                         <div class="top_info">
-                            <div
-                                class="landImg">
+                            <div class="landImg">
                                 <div class="badge_wrap">
                                     <span class="badge black">추천</span> <span class="badge black">급매물</span> <span
                                         class="badge">리모델링</span>
                                 </div>
-                                <div class="swiper">
-                                    <ul class="swiper-wrapper" id="swiper-wrapper" aria-live="off">
-                                        <li class="swiper-slide"><img
-                                                src="../resource/image/temp_img2.jpg"
-                                                alt="송내 로데오 상가 이미지1"></li>
-                                        <li class="swiper-slid"><img
-                                                src="../resource/image/temp_img3.jpg"
-                                                alt="송내 로데오 상가 이미지2"></li>
+                                <div class="swiper-main">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide"><img src="../resource/image/temp_img2.jpg" alt="송내 로데오 상가 이미지1"></li>
+                                        <li class="swiper-slide"><img src="../resource/image/temp_img3.jpg" alt="송내 로데오 상가 이미지2"></li>
+                                        <li class="swiper-slide"><img src="../resource/image/temp_img3.jpg" alt="송내 로데오 상가 이미지2"></li>
                                     </ul>
                                     <div class="swiper-pagination"></div>
 
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
 
-                                    <div class="swiper-scrollbar"></div>
+                                    <!-- <div class="swiper-scrollbar"></div> -->
                                 </div>
-                                
+
                             </div>
                             <div class="titles">
                                 <div class="tip">
@@ -437,7 +433,7 @@
                         <!-- 이미지/타이틀 [e] -->
                         <!-- 매물정보 [s] -->
                         <dl class="dl_info">
-                            <dt class="open" onclick="tit_open(this)">매물정보</dt>
+                            <dt class="open">매물정보</dt>
                             <dd>
                                 <ul class="info_list">
                                     <li class="add"><span>소재지</span>경기 부천시 송내동 303-5 2층</li>
@@ -466,27 +462,30 @@
             </div>
         </div>
         <div class="dim"></div>
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
+        <script>
 
-        // If we need pagination
-        pagination: {
-        el: '.swiper-pagination',
-        },
+            const swiper = new Swiper('.swiper-main', {
+                // Optional parameters
+                loop: true,
 
-        // Navigation arrows
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        },
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: "progressbar",
+                },
 
-        // And if we need scrollbar
-        scrollbar: {
-        el: '.swiper-scrollbar',
-        },
-        });
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+            });
+        </script>
     </div>
 </body>
 

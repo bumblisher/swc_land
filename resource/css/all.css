@@ -11,6 +11,7 @@
 .content_inner{width:1280px;margin:0 auto;padding:50px 50px 120px 50px;box-sizing: border-box;}
 .container.bg_gray{background-color: #f7f7f7;}
 .container.bg_gray .content_inner{background-color: #f7f7f7;}
+.container.list .content_inner{padding: 60px 0px;}
 
 /* header */
 .util_box{position:relative;height:30px}
@@ -414,6 +415,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .tit_main .slogan span{color:#ffffff}
 .tit_main .slogan_en{padding-top:25px;font-size:17px;color:#fff;letter-spacing:9px;opacity:0.6;font-family: 'Roboto-M', sans-serif;}
 
+
 .box_main::after{content:"";display: block;clear:both}
 .box_main ul{float:left}
 .quick_menu::after{content:"";display: block;clear:both}
@@ -422,9 +424,10 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .quick_menu li:nth-child(1) a{background:url(../image/ico_main_quick01.png) center 39px no-repeat}
 .quick_menu li:nth-child(2) a{background:url(../image/ico_main_quick02.png) center 39px no-repeat}
 .quick_menu li:nth-child(3) a{padding-top:133px;background:url(../image/ico_main_quick03.png) center 39px no-repeat}
-.quick_menu li:nth-child(4) a{padding-top:133px;background:url(../image/ico_main_quick04.png) center 39px no-repeat}
+.quick_menu li:nth-child(4) a{padding-top:133px;background:url(../image/ico_main_quick04.png) center 39px no-repeat;margin-right: 15px;}
 
-.quick_menu2 li{width:372px;height:60px;line-height:60px;background:#fff;border-radius:7px;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);}
+.quick_menu2{overflow: hidden;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;}
+.quick_menu2 li{width:342px;height:60px;line-height:60px;background:#fff;border-radius:7px;box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);}
 .quick_menu2 li + li{margin-top:10px;}
 .quick_menu2 li a{display:block;height:100%;padding-left:72px;font-size:16px;color:#333333;box-sizing:border-box}
 .quick_menu2 li:nth-child(1) a{background:url(../image/ico_main_quick05.png) 17px center no-repeat}
@@ -748,7 +751,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .popup .pop_header {position: relative; padding:0 30px;height: 70px; background: #445fb7;}
 .popup .pop_header h2 {line-height: 70px; color: #fff; font-size: 20px;text-align: left; }
 .popup .pop_header .btn_close {position: absolute; top: 25px; right: 30px; width: 20px; height: 20px; background: url(../image/ico_close.png) no-repeat center;text-indent: -9999px;}
-.popup .pop_cont {height: 680px;overflow: auto;padding: 30px;box-sizing: border-box; }
+.popup .pop_cont {height: 726px;overflow: auto;padding: 30px;box-sizing: border-box; }
 .popup .tit_tiny{font-size:18px;font-family:'Roboto', 'Noto-M', sans-serif;}
 .popup .pop_footer{height: 50px;background: #f7f7f7;padding:0 30px;box-sizing: border-box;border-top:1px solid #ccc}
 .popup .pop_footer .btn_dayclose{color:#555;font-size: 15px;text-decoration: underline;line-height: 50px;float: right;}
@@ -998,7 +1001,8 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 .saleList ul li .img .state_wrap{display:flex;position:absolute;top:15px;left:15px;width:max-content}
 .saleList ul li .img .state{min-width:60px;height:30px;border-radius:30px;font-size:14px;color:#fff;text-align:center;line-height:28px;background:var(--primary);font-family:'SBAggroL'}
 .saleList ul li .img .state+.state{margin-left:4px}
-.saleList ul li .sold{position:absolute;left:0;top:0;z-index:2;width:100%;height:100%;background:url(/sh_img/make24/search/img/sold.png) center no-repeat rgba(255,255,255,.6);background-size:55%}
+.saleList ul li .sold{position:absolute;left:0;top:0;z-index:2;width:100%;height:100%;background: rgba(255,255,255,.6);background-size:55%}
+.saleList ul li .sold:before{content: '거래 완료';position: absolute;top:50%;left:50%;display: flex;align-items: center;justify-content: center;width: 100px;height: 100px;border-radius: 50%;border:4px dashed #f00;color:#f00;transform: translate(-50%,-50%);font-size: 18px;font-weight: 700;}
 
 /* 더보기  */
 .saleList .more_btn{display:block;width:200px;height:60px;margin:0 auto;padding-left:7px;border:none;border-radius:30px;font-size:16px;color:#222;line-height:62px;text-align:center;background:#f5f6f8;border:1px solid #bbb;font-weight: bold;}
@@ -1047,7 +1051,7 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 #landView .top_info .ps{padding:15px;margin-top:20px;border-radius:14px;border:1px solid #e1e1e1;text-align:center}
 /* 매물정보*/
 #landView .dl_info{background-color:#f8f8f8;border:1px solid #ddd;margin-top: 20px;}
-#landView .dl_info dt{cursor:pointer;display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 25px;border-bottom:1px solid #e1e1e1;font-size:20px;color:#222}
+#landView .dl_info dt{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 25px;border-bottom:1px solid #e1e1e1;font-size:20px;color:#222}
 
 #landView .dl_info dd{padding:25px}
 #landView .dl_info dd:not(.detail){}
@@ -1116,3 +1120,253 @@ h3 > span[id*='focus']{display: block;margin-top: -150px;padding-bottom: 150px;}
 #inq_pop .prv_area a{cursor:pointer;margin-left:auto}
 #inq_pop .prv_area a:hover{text-decoration:underline}
 #inq_pop  .comp_btn{width:100%;height:60px;border:none;border-radius:8px;font-size:16px;color:#fff;background:var(--primary);font-family:'SBAggroL'}
+
+
+#landSch{font-size:13px;color:#999;font-family:'SBAggroL'}
+#landSch .sh_input{font-size:15px;font-family:'SBAggroL'}
+#landSch .sh_input:focus, #landSch .sh_input:active{border:none!important;box-shadow:none;outline:none;transition:none}
+#landSch button{font-family:'SBAggroL'}
+/* rangeSlider 공통 */
+#landSch .range_slier_wrap{padding:0 9px}
+#landSch .noUi-target{height:3px;margin:20px 0 60px;border:none;border-radius:0;box-shadow:none;background-color:#e1e1e1}
+#landSch .noUi-connect{background-color:var(--primary)}
+#landSch .noUi-handle{right:-10px;top:-10px;width:19px;height:19px;border:none;border-radius:50%;box-shadow:0 0 12px rgba(0,0,0,.2)}
+#landSch .noUi-handle:before ,#landSch .noUi-handle:after{display:none}
+#landSch .noUi-marker-horizontal.noUi-marker-large{width:1px;height:5px;margin-left:0;background:#ccc}
+#landSch .noUi-value{font-size:13px;color:#999}
+#landSch .noUi-pips-horizontal{padding:12px 0 0;height:35px}
+
+/* ============================================== 검색 상단 [s] */
+#landHd{position: absolute;top: 120px;left: 0;right: 0;display:flex;height:60px;border-bottom:1px solid #e1e1e1}
+#landHd.list_type{position:sticky;top:0;z-index:10;background:#fff}
+/* 1. 검색 */
+#landHd .sch_wrap{display:flex;position:relative;justify-content:space-between;align-items:center;width:420px;border-right:1px solid #e1e1e1}
+#landHd .sch_wrap .sh_input{width:calc(100% - 58px);height:100%;padding:0 20px;border:none}
+#landHd .sch_wrap .sch_btn{width:58px;border:none;border-radius:0;background:none}
+#landHd .sch_wrap .sch_btn svg{vertical-align:sub;width:28px;height:28px;stroke-width:1;color:#222}
+
+/* 검색 - 결과 리스트 */
+#text_result{display:none;overflow-y:scroll;position:absolute;top:100%;left:0;z-index:3;width:100%;height:250px;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;background:#fff;box-shadow:8px 8px 16px rgba(0,0,0,.15)}
+#text_result::-webkit-scrollbar{width:5px}
+#text_result::-webkit-scrollbar-thumb{border-radius:5px;background-color:#b1b1b1}
+#text_result::-webkit-scrollbar-track{border-radius:5px;background-color:#fff}
+#text_result_list li+li{border-top:1px solid #eee}
+#text_result_list li button{width:100%;padding:15px 20px 12px;border:none;font-size:14px;line-height:1.4;text-align:left;color:#999;background:none}
+#text_result_list li button p{font-size:14px;color:#222}
+#text_result_list li button:hover{background-color:#f5f6f8}
+#text_result_list li.empty{display:block;padding:30px 0;font-size:14px;text-align:center}
+
+/* 2. 필터 */
+#landHd .filter_wrap{display:flex;flex-grow:1;align-items:center;padding:0 10px}
+#landHd .filter_wrap .filter_area{position:relative;display:flex;align-items:center;margin-right:8px}
+#landHd .filter_wrap .filter_close{display:none}
+#landHd .filter_wrap .filter_close.top{position:absolute;right:2px;top:4px;width:42px;height:42px;background:none}
+#landHd .filter_wrap .filter_close.top svg{stroke-width:1.5px;color:#222}
+#landHd .filter_wrap .filter_close.btm{width:100%;height:45px;font-size:14px;color:#fff;background:var(--primary)}
+/* 필터 - 버튼 */
+#landHd .filter_wrap .filter_btn{border:1px solid #e1e1e1;background:url(/sh_img/make24/search/img/arr_off.png) right 12px center no-repeat}
+#landHd .filter_wrap .filter_btn:hover{border-color:#aaa}
+#landHd .filter_wrap .filter_btn button{overflow:hidden;height:40px;padding:0 40px 0 10px;border:none;border-radius:0;font-size:15px;color:#999;line-height:42px;background:none}
+#landHd .filter_wrap .filter_btn.active{border-color:var(--primary-50);background-image:url(/sh_img/make24/search/img/arr_on.png)}
+#landHd .filter_wrap .filter_btn.active button{color:var(--primary)}
+/* 필터 - 내용 */
+#landHd .filter_detail{display:none;position:absolute;top:calc(100% + 5px);left:0;z-index:10;border:1px solid #555;box-shadow:8px 8px 16px rgba(0,0,0,.15);background-color:#fff}
+#landHd .filter_detail .detail_inner{padding:28px}
+#landHd .filter_detail .tit{height:60px;padding-bottom:10px;margin-bottom:20px;border-bottom:1px solid #555;line-height:24px}
+#landHd .filter_detail .tit p{font-size:16px;color:#222}
+#landHd .filter_detail .tit .unit{float:right;padding-top:2px;font-size:12px}
+#landHd .filter_detail .stit{font-size:16px;color:#222}
+/* 필터 - 체크박스 */
+#landHd .ckbox_wrap li+li{margin-top:12px}
+#landHd .ckbox_wrap input[type=checkbox]{position:absolute;width:0;height:0}
+#landHd .ckbox_wrap label{display:block;font-size:15px;color:#222}
+#landHd .ckbox_wrap label:before{display:inline-block;vertical-align:middle;content:"";width:19px;height:19px;margin-right:10px;border-radius:50%;border:1px solid #ccc}
+#landHd .ckbox_wrap label:hover{cursor:pointer}
+#landHd .ckbox_wrap input:checked + label:before{border-color:var(--primary);background:url(/sh_img/make24/search/img/ck_w.png) center no-repeat var(--primary)}
+
+/* 필터 -------- 매물종류*/
+#landHd .filter_detail.land_sort{width:280px}
+#landHd .filter_detail.land_sort .scroll_area{}/* 스크롤 생성*/
+
+/* 필터 -------- 거래유형 및 가격 */
+#landHd .filter_detail.land_type_price{width:400px}
+#landHd .filter_detail.land_type_price .tit{margin:0 0 20px}
+#landHd .filter_detail.land_type_price .scroll_area{overflow-x:hidden;overflow-y:scroll;max-height:270px;padding:0 25px 0 10px}/* 스크롤 생성*/
+#landHd .filter_detail.land_type_price .clear{display:flex;align-items:center;justify-content:space-between}
+#landHd .filter_detail.land_type_price li{position:relative;padding-bottom:20px;margin-bottom:20px;border-bottom:1px solid #e1e1e1}
+#landHd .filter_detail.land_type_price li:last-child{border:none}
+#landHd .filter_detail.land_type_price .tit~.tit{height:auto;margin:10px 0 25px}
+#landHd .filter_detail.land_type_price .price_area li{padding-bottom:0}
+#landHd .filter_detail.land_type_price .values{font-size:15px;color:var(--primary)}
+#rangeSliderSale, #rangeSliderRent ,#rangeSliderMonthly{display:none}
+
+/* 필터 -------- 면적 */
+#landHd .filter_detail.land_space{width:400px}
+#landHd .filter_detail.land_space .clear{display:flex;justify-content:space-between;align-items:center}
+#landHd .filter_detail.land_space li{position:relative;padding-top:10px}
+#landHd .filter_detail.land_space li+li{padding-top:30px;margin-top:30px;border-top:1px solid #e1e1e1}
+#landHd .filter_detail.land_space .values{font-size:15px;color:var(--primary)}
+
+/* 필터 -------- 기타옵션 */
+#landHd .filter_detail.land_etc{width:400px}
+#landHd .filter_detail.land_etc .thema button{height:34px;padding:0 15px;margin:3px 2px;border-radius:0;border:1px solid #e1e1e1;font-size:15px;line-height:35px;color:#999;background-color:#fff;transition:all .2s;font-family:'SBAggroL'}
+#landHd .filter_detail.land_etc .thema button:hover{border-color:var(--primary-50)}
+#landHd .filter_detail.land_etc .thema button.active{border-color:var(--primary);color:#fff;background-color:var(--primary)}
+#landHd .filter_detail.land_etc input[type=checkbox]{position:absolute;width:0;height:0}
+#landHd .filter_detail.land_etc label{display:inline-block;height:34px;padding:0 15px;margin:3px 2px;border-radius:0;border:1px solid #e1e1e1;font-size:15px;line-height:35px;color:#999;background-color:#fff;transition:all .2s;font-family:'SBAggroL'}
+#landHd .filter_detail.land_etc label:hover{cursor:pointer;border-color:var(--primary-50)}
+#landHd .filter_detail.land_etc input:checked + label{border-color:var(--primary);color:#fff;background-color:var(--primary)}
+
+/* 3. 찜/새로고침/목록or지도 버튼 */
+#landHd .right_btns{display:flex;align-items:center;padding-right:10px}
+#landHd .right_btns .r_btn{display: inline-flex;justify-content: center;align-items: center;width:40px;height:40px;border-radius:0;border:1px solid #e1e1e1;font-size:15px;line-height:40px;color:#999;text-align:center;background-color:#fff;transition:all .2s;font-family:'SBAggroL'}
+#landHd .right_btns .r_btn svg{transition:all .2s}
+#landHd .right_btns .r_btn:hover{border-color:var(--primary-50);color:var(--primary)}
+#landHd .right_btns .r_btn:hover svg{color:var(--primary)}
+#landHd .right_btns .r_btn .feather-sliders{margin-left:20px}
+#landHd .right_btns .refresh_btn{margin:0 6px}
+#landHd .right_btns .wish_view_btn{line-height:43px}
+#landHd .right_btns .wish_view_btn:hover{border-color:var(--action-50);color:var(--action)}
+#landHd .right_btns .wish_view_btn.on{color:var(--action)}
+#landHd .right_btns svg{vertical-align:middle;width:16px;height:16px;color:#999}
+
+@media(max-width:1400px){
+#landHd{flex-wrap:wrap;height:120px}
+#landHd .sch_wrap{order:1}
+#landHd .right_btns{order:2;margin-left:auto}
+#landHd .filter_wrap{order:3;width:100%;border-top:1px solid #e1e1e1}
+}
+@media(max-width:1024px){
+#landHd{flex-wrap:wrap;height:auto}
+#landHd .sch_wrap{width:calc(100% - 90px);height:45px}
+#landHd .sch_wrap .sh_input{width:calc(100% - 50px);padding:0 0 0 10px}
+#landHd .sch_wrap .sch_btn{width:50px}
+#landHd .sch_wrap .sch_btn svg{width:24px;height:24px}
+#landHd  #text_result{width:calc(100% + 91px)}
+#landHd .right_btns{flex-grow:1;padding:0}
+#landHd .right_btns button{margin-right:6px}
+#landHd .right_btns .r_btn{width:45px;height:45px;margin:0;border:none;line-height:45px}
+#landHd .right_btns .wish_view_btn{line-height:49px}
+#landHd .right_btns .r_btn:first-child{border-right:1px solid #e1e1e1}
+#landHd .right_btns .refresh_btn{display:none}
+#landHd .filter_bg{display:none;position:fixed;z-index:102;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6)}
+#landHd .filter_wrap{overflow-x:scroll;position:relative;width:auto;height:50px;padding:0 0 0 10px}
+#landHd .filter_wrap .filter_btn{border-radius:4px;background:none}
+#landHd .filter_wrap .filter_btn.active{background:none}
+#landHd .filter_wrap .filter_btn button{height:35px;padding:0 10px;font-size:14px;line-height:37px;white-space:nowrap}
+#landHd .filter_wrap .filter_close{display:block}
+#landHd .filter_detail{position:fixed;z-index:103;top:50%;left:50%;transform:translate(-50%,-50%);max-width:calc(100% - 20px);max-height:80vh}
+#landHd .filter_detail .scroll_area{max-height:45vh;overflow-y:scroll}
+#landHd .filter_detail .detail_inner{padding:25px}
+#landHd .filter_detail.land_space .tit{margin:0 15px 20px}
+#landHd .filter_detail.land_space .detail_inner{padding:25px 10px}
+#landHd .filter_detail.land_space  .scroll_area{padding:0 15px}
+#landHd .filter_detail.land_type_price{max-height:80vh;overflow-y:scroll}
+#landHd .filter_detail.land_type_price .scroll_area{overflow:visible;max-height:none;padding:0 10px}
+}
+/* ============================================== 검색 상단 [e] */
+
+/* ============================================== 검색 리스트 + 지도 [s] */
+/* 리스트 */
+#landContMap{display:flex;position:relative}
+#landCont{display:flex;height:calc(100vh - 140px);background:#fff}
+#landCont .item_list_wrap{max-height:100%;overflow-y:scroll;width:420px;border-right:1px solid #e1e1e1}
+#landCont .item_list_wrap::-webkit-scrollbar{width:5px}
+#landCont .item_list_wrap::-webkit-scrollbar-thumb{border-radius:5px;background-color:#b1b1b1}
+#landCont .item_list_wrap::-webkit-scrollbar-track{border-radius:5px;background-color:#fff}
+#landCont .item_list{display:flex;flex-direction:column}
+#landCont .item_list li{display:flex;position:relative;padding:12px;line-height:1.7;}
+#landCont .item_list li+li{border-top:1px solid #e1e1e1}
+#landCont .item_list li.empty{display:block;padding:30px 0;font-size:14px;text-align:center}
+#landCont .item_list .img{overflow:hidden;position:relative;width:140px;height:136px;border-radius:6px;border:1px solid #e1e1e1;background-image:url(/sh_img/make24/main_map/no_img.jpg);background-size:cover;background-position:center;background-repeat:no-repeat}
+#landCont .item_list .sold{position:absolute;left:0;top:0;z-index:2;width:100%;height:100%;background:url(/sh_img/make24/search/img/sold.png) center no-repeat rgba(255,255,255,.6);background-size:80%}
+#landCont .item_list .info{display:flex;flex-flow:column;justify-content:center;width:calc(100% - 140px);padding-left:12px}
+#landCont .item_list .tip{display:flex;align-items:center} 
+#landCont .item_list .tip .badge_wrap_mo{display:block;position:absolute;left:18px;top:18px;z-index:1;line-height:1}
+#landCont .item_list .tip .badge_wrap{position:relative;left:auto;top:auto;line-height:1}
+#landCont .item_list .tip .badge_wrap>div{display:none}
+#landCont .item_list .tip .badge{display:inline-block;min-width:38px;height:19px;padding:0 8px;border-radius:20px;font-size:11px;text-align:center;color:#fff;line-height:22px;background-color:var(--action)}
+#landCont .item_list .tip .badge.black{background:#222}
+#landCont .item_list .tip .wish_btn{display:flex;align-items:center;margin:0 5px;border:none;font-size:15px;color:#bbb;background:none;transition:all .2s}
+#landCont .item_list .tip .wish_btn .fa-heart{color:var(--action)}
+#landCont .item_list .tip p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;height:19px;padding:0 8px;margin-left:auto;border-radius:2px;border:1px solid #e1e1e1;font-size:11px;line-height:19px}
+#landCont .item_list .tit{font-size:14px;color:#222}
+#landCont .item_list .tit .price{margin:10px 0 6px;font-size:15px;line-height:1;font-family:'SBAggroB'}
+#landCont .item_list .tit .price span{display:inline-block;vertical-align:middle;width:20px;height:20px;margin-right:5px;border-radius:50%;border:1px solid var(--action);font-size:11px;text-align:center;line-height:20px;color:var(--action);font-family:'SBAggroL'}
+#landCont .item_list .tit .desc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#landCont .item_list .tit .loca{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;color:#999}
+#landCont .item_list .tit .loca svg{vertical-align:middle;width:13px;height:13px}
+#landCont .item_list .kwd{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;position:relative;margin-top:5px;padding:10px 15px 0 0;border-top:1px solid #e1e1e1;font-size:12px;line-height:1.2}
+#landCont .item_list .kwd span{display:inline-block;vertical-align:middle}
+#landCont .item_list .kwd span+span:before{display:inline-block;vertical-align:middle;content:"";width:1px;height:11px;margin:0 6px 0 2px;background-color:#ccc}
+#landCont .item_list .kwd svg{position:absolute;right:0;top:7px;width:14px;height:18px;color:#aaa}
+@media(hover:hover){
+#landCont .item_list li:not(.empty):hover{background-color:#f7f7f7}
+}
+/* 리스트 - 모바일 */
+#landCont .item_list_btn{display:none}
+
+/* 지도 */
+#landMap{flex-grow:1;height:calc(100vh - 140px)}
+#landMap .map_area{height:100%}
+#map .map_dong{overflow:hidden;width:200px;cursor:pointer}
+#map .map_dong span.txt{float:left;margin:5px 0 0 -17px;padding:8px 12px 8px 20px;border-radius:30px;background:rgba(255,255,255,0.95);font-size:15px;color:#333;font-family:'notokr-medium'}
+#map .map_dong span.cnt{position:relative;float:left;z-index:1;min-width:46px;height:46px;padding:0 10px;border-radius:30px;background:var(--primary);font-size:16px;line-height:46px;color:#fff;text-align:center;font-family:'notokr-bold'}
+
+/* 지도 마커 클릭시 정보 */
+#map_item{overflow:hidden;width:320px;border-radius:14px;font-size:14px;background:#fff;box-shadow:5px 5px 16px rgba(0,0,0,.15);}
+#map_item .it_bar{display:flex;align-items: center;height:36px;padding:0 12px;color:#fff;background:var(--primary);}
+#map_item .it_bar p{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#map_item .it_bar .close{display:flex;margin-left:auto}
+#map_item .it_bar .close svg{margin:auto}
+#map_item .it_cont{display:flex;padding:12px;line-height:1.7}
+#map_item .it_cont .img{overflow:hidden; border:1px solid #e1e1e1;border-radius:6px}
+#map_item .it_cont .desc{width:calc(100% - 87px);padding-left:10px}
+#map_item .it_cont .tit{color:#222}
+#map_item .it_cont .tit .price{margin:0 0 6px;font-size:15px;line-height:1;font-family:'SBAggroB'}
+#map_item .it_cont .tit .price span{display:inline-block;vertical-align:middle;width:20px;height:20px;margin-right:5px;border-radius:50%;border:1px solid var(--action);font-size:11px;text-align:center;line-height:20px;color:var(--action);font-family:'SBAggroL'}
+#map_item .it_cont .tit .desc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#map_item .it_cont .tit .loca{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;color:#999}
+#map_item .it_cont .tit .loca svg{vertical-align:middle;width:13px;height:13px}
+#map_item .it_more_btn{display:block;padding:4px 0 2px;margin-top:4px;font-size:13px;color:#222;border-radius:4px;text-align:center;border:1px solid #bbb;transition:all .2s}
+@media(hover:hover){
+#map_item .it_more_btn:hover{border-color:#555}
+}
+
+/* 찜 알림 */
+#favorite_alarm{position:fixed;top:calc(50% + 40px);left:50%;z-index:9999;transform:translate(-50%,-50%);width:220px;padding:40px 0;border-radius:12px;font-size:15px;text-align:center;color:#222;background:#fff;box-shadow:5px 5px 16px rgba(0,0,0,.15);font-family:'SBAggroL'}
+#favorite_alarm span{color:var(--action)}
+
+.landList { max-width: 1320px; width: 100%; margin: 0px auto; padding: 40px 0px; font-size: 16px; line-height: 1.8; color: rgb(153, 153, 153); font-family: SBAggroL; }
+.landList .item_all_ckbox { width: 15px; height: 15px; }
+.landList .item_ckbox { position: absolute; top: 5px; left: 15px; z-index: 5; width: 15px; height: 15px; }
+.landList .item_list { display: flex; flex-wrap: wrap; }
+.landList .item_list li { overflow: hidden; position: relative; width: calc(25% - 25px); margin-left: 30px; border: 1px solid rgb(225, 225, 225); border-radius: 26px; background: rgb(255, 255, 255); transition: all 0.3s ease 0s; }
+.landList .item_list li.empty { display: block; padding: 30px 0px; font-size: 15px; text-align: center; }
+.landList .item_list li:nth-child(4n+1) { margin-left: 0px; }
+.landList .item_list li:nth-child(n+5) { margin-top: 40px; }
+.landList .item_list li .img { overflow: hidden; position: relative; height: 235px; background: url("/sh_img/make24/main_map/no_img.jpg") center center / cover no-repeat; }
+.landList .item_list li .sold { position: absolute; left: 0px; top: 0px; z-index: 5; width: 100%; height: 100%; background: url("/sh_img/make24/search/img/sold.png") center center / 55% no-repeat rgba(255, 255, 255, 0.6); }
+.landList .item_list li .info { padding: 15px 20px 20px; }
+.landList .item_list li .tip { display: flex; align-items: center; }
+.landList .item_list li .tip .badge_wrap_mo { display: none; }
+.landList .item_list li .tip .badge_wrap { position: absolute; left: 15px; top: 15px; }
+.landList .item_list li .tip .badge_wrap > div { display: inline-block; }
+.landList .item_list li .tip .badge { display: inline-block; min-width: 48px; height: 28px; padding: 0px 10px; border-radius: 20px; font-size: 13px; text-align: center; color: rgb(255, 255, 255); line-height: 31px; background-color: var(--action); }
+.landList .item_list li .tip .badge.black { background: rgb(34, 34, 34); }
+.landList .item_list li .tip .wish_btn { position: absolute; right: 15px; top: 15px; z-index: 4; border: none; width: 35px; height: 35px; border-radius: 50%; font-size: 16px; color: rgb(255, 255, 255); background: rgba(0, 0, 0, 0.15); transition: all 0.2s ease 0s; }
+.landList .item_list li .tip .wish_btn i { margin-top: 5px; }
+.landList .item_list li .tip .wish_btn .fa-heart { color: var(--action); }
+.landList .item_list li .tip p { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; height: 22px; padding: 0px 8px; margin-left: auto; border-radius: 2px; border: 1px solid rgb(225, 225, 225); font-size: 13px; line-height: 22px; }
+.landList .item_list li .tit { font-size: 16px; color: rgb(34, 34, 34); }
+.landList .item_list li .tit .price { margin: 5px 0px 10px; font-size: 20px; line-height: 1; font-family: SBAggroB; }
+.landList .item_list li .tit .price span { display: inline-block; vertical-align: middle; width: 35px; height: 35px; margin-right: 5px; border-radius: 50%; border: 1px solid var(--action); font-size: 15px; text-align: center; line-height: 37px; color: var(--action); font-family: SBAggroM; }
+.landList .item_list li .tit .desc { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.landList .item_list li .tit .loca { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; color: rgb(153, 153, 153); }
+.landList .item_list li .tit .loca svg { vertical-align: middle; width: 15px; height: 15px; }
+.landList .item_list li .kwd { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; position: relative; margin-top: 10px; padding: 12px 15px 0px 0px; border-top: 1px solid rgb(225, 225, 225); font-size: 14px; line-height: 1.2; }
+.landList .item_list li .kwd span { display: inline-block; vertical-align: middle; }
+.landList .item_list li .kwd span + span::before { display: inline-block; vertical-align: middle; content: ""; width: 1px; height: 11px; margin: 0px 6px 0px 2px; background-color: rgb(204, 204, 204); }
+.landList .item_list li .kwd svg { position: absolute; right: 0px; top: 7px; width: 14px; height: 18px; color: rgb(170, 170, 170); }
+.landList .btn_area { display: flex; }
+.landList .btn_area .w_btn { margin: 0px 0px 0px auto; }
